@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.video{
+
+    text-align: center;
+ 
+
+    @include m.tablet { 
+        max-width: 90%;
+        margin: 0 auto;
+     }
+
+
+    &__play{
+
+        margin-top: v.$top;
+        text-align: center;
+
+        height: 20rem;
+
+
+        @include m.tablet { 
+            width: 100%;
+            height: 80rem;
+         }
+
+
+    }
+}

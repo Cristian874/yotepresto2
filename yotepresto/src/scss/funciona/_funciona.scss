@@ -1,0 +1,60 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.funciona{
+    margin-top: v.$top;
+   
+
+    &__grid{
+        @include m.tablet { 
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 2rem;
+            
+         }
+
+    }
+
+
+    &__titulares{
+        text-align: center;
+  
+
+        @include m.tablet { 
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+         }
+    }
+
+    &__heading{
+        font-size: 2rem;
+
+    }
+
+    &__title{
+
+        font-size: 4rem;
+
+        @include m.tablet { 
+            
+         width: 80%;
+        }
+
+    }
+
+    &__texto{
+        text-align: center;
+        @include m.tablet { 
+            text-align: left;
+            
+         }
+    }
+
+    &__boton{
+    
+        margin-top: 2rem;
+        padding: 1.5rem 4rem;
+    }
+}

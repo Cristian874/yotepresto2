@@ -1,0 +1,63 @@
+@use 'variables' as v;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    position: relative;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+
+}
+
+
+/*
+[class$="__contenedor"]{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+[class$="__span"]{
+  color: v.$primario;
+}*/
+
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+.span{
+    color: v.$primario;
+}
+body{
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+}
+p{
+    color: v.$gris;
+    font-weight: 400;
+    font-size:2rem;
+    line-height: 2;
+}
+a{
+    text-decoration:none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+h1, h2{
+    margin: v.$separacion 0;
+    font-weight: 700;
+
+  }
+
+
+h1,h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 2rem;
+    color: v.$gris;
+    font-weight: 400;
+}

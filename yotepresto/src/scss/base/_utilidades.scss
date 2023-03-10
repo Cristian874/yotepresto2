@@ -1,0 +1,29 @@
+
+@use 'variables' as v;
+
+@use 'mixins' as m;
+.text-center{
+    text-align: center;
+}
+
+.boton{
+
+    padding: 1.5rem 3rem;
+    text-align: center;
+    color: v.$blanco;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    background-color: v.$primario;
+    border-radius: .5rem;
+    font-size:2rem;
+
+    @include m.tablet { 
+
+        display: inline-block;
+    
+    
+    }
+
+}
+

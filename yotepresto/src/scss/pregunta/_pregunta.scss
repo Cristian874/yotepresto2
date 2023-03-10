@@ -1,0 +1,53 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.preguntas{
+
+
+    margin-top: v.$top;
+
+    @include m.tablet { 
+        
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+        
+     }
+
+
+
+}
+
+
+.pregunta{
+
+
+    &__contenedor{
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        &:nth-child(2){
+            margin-bottom: 0;
+        }
+
+
+
+     
+    }
+    &__img{
+        background-color: v.$primario;
+        padding: 1rem;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+    }
+
+    &__titular{
+        font-size: 2rem;
+    }
+
+}
